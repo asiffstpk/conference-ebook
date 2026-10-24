@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conference E-Book</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f2f5f8;
+  margin: 0;
+  padding: 40px 15px;
+}
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 35px 20px;
+  background: white;
+  border-radius: 16px;
+}
+h1 { color: #173b5e; }
+p { color: #555; line-height: 1.6; }
+a {
+  display: inline-block;
+  background: #173b5e;
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
+  margin: 10px;
+  border-radius: 8px;
+}
+a:hover { background: #285b85; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Conference E-Book</h1>
+  <p>Access the conference program and participant profiles.</p>
+  <p>Please select your device:</p>
+
+  <a href="conference.pdf" target="_blank">📱 Mobile</a>
+  <a href="conference.pdf" target="_blank">💻 Laptop</a>
+</div>
+</body>
+</html>
