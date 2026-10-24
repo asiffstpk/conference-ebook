@@ -2,46 +2,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Conference E-Book</title>
-<style>
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background: #f2f5f8;
-  margin: 0;
-  padding: 40px 15px;
-}
-.container {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 35px 20px;
-  background: white;
-  border-radius: 16px;
-}
-h1 { color: #173b5e; }
-p { color: #555; line-height: 1.6; }
-a {
-  display: inline-block;
-  background: #173b5e;
-  color: white;
-  text-decoration: none;
-  padding: 15px 25px;
-  margin: 10px;
-  border-radius: 8px;
-}
-a:hover { background: #285b85; }
-</style>
-</head>
-<body>
-<div class="container">
-  <h1>Conference E-Book</h1>
-  <p>Access the conference program and participant profiles.</p>
-  <p>Please select your device:</p>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <a href="conference.pdf" target="_blank">📱 Mobile</a>
-  <a href="conference.pdf" target="_blank">💻 Laptop</a>
-</div>
+  <title>MBI Symposium 2026</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f5f8;
+      color: #263746;
+    }
+
+    .header {
+      background: #12344d;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    .logo {
+      width: 260px;
+      max-width: 90%;
+      height: auto;
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 10px 0;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      margin: 8px 0;
+    }
+
+    .details {
+      margin-top: 22px;
+      line-height: 1.9;
+    }
+
+    .container {
+      max-width: 650px;
+      margin: 35px auto;
+      padding: 30px 20px;
+      text-align: center;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+
+    .welcome {
+      line-height: 1.7;
+      color: #526170;
+      margin-bottom: 25px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      min-width: 190px;
+      padding: 16px 20px;
+      background: #12344d;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #246184;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #6b7785;
+      font-size: 13px;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 26px;
+      }
+
+      .container {
+        margin: 20px 12px;
+        padding: 25px 15px;
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <img
+      src="mbi-logo.png"
+      alt="MBI Symposium Logo"
+      class="logo"
+    >
+
+    <h1>MBI Symposium 2026</h1>
+
+    <div class="subtitle">
+      Mind-Body Interface Symposium
+    </div>
+
+    <div class="details">
+      <div>📅 November 14–16, 2026</div>
+      <div>📍 Taichung, Taiwan</div>
+    </div>
+
+  </header>
+
+  <main class="container">
+
+    <h2>Conference Program</h2>
+
+    <p class="welcome">
+      Welcome to MBI Symposium 2026.
+      Access the conference program and participant
+      information using the options below.
+    </p>
+
+    <div class="buttons">
+
+      <a class="button"
+         href="conference.pdf"
+         target="_blank"
+         rel="noopener">
+        📱 Mobile
+      </a>
+
+      <a class="button"
+         href="conference.pdf"
+         target="_blank"
+         rel="noopener">
+        💻 Laptop
+      </a>
+
+    </div>
+
+  </main>
+
+  <footer>
+    MBI Symposium 2026 · Taichung, Taiwan
+  </footer>
+
 </body>
 </html>
