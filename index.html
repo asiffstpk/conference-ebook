@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>MBI Symposium 2026</title>
 
   <style>
@@ -25,7 +26,7 @@
       overflow: hidden;
       background: #12344d;
       border-radius: 16px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
       text-align: center;
     }
 
@@ -70,41 +71,46 @@
     }
 
     .program h2 {
-      font-size: 24px;
-      margin: 8px 0 15px;
+      font-size: 26px;
+      margin: 8px 0 18px;
       color: #ffffff;
     }
 
     .welcome {
       max-width: 520px;
-      margin: 0 auto 28px;
+      margin: 0 auto 32px;
       line-height: 1.8;
       color: #e1eaf0;
-      font-size: 16px;
+      font-size: 18px;
     }
 
     .buttons {
       display: flex;
       justify-content: center;
-      gap: 16px;
+      align-items: stretch;
+      gap: 18px;
       flex-wrap: wrap;
     }
 
     .button {
-      display: inline-block;
-      min-width: 200px;
-      padding: 16px 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 260px;
+      min-height: 75px;
+      padding: 22px 30px;
       background: #ffffff;
       color: #12344d;
       text-decoration: none;
-      border-radius: 8px;
-      font-size: 17px;
+      border-radius: 10px;
+      font-size: 21px;
       font-weight: bold;
-      transition: background 0.2s;
+      transition: background 0.2s, transform 0.2s;
     }
 
     .button:hover {
       background: #dce9f2;
+      transform: translateY(-2px);
     }
 
     footer {
@@ -119,8 +125,16 @@
         padding: 12px 8px;
       }
 
+      .conference-card {
+        border-radius: 12px;
+      }
+
       .header {
         padding: 25px 15px 15px;
+      }
+
+      .logo {
+        width: 250px;
       }
 
       h1 {
@@ -131,13 +145,34 @@
         font-size: 17px;
       }
 
+      .details {
+        font-size: 15px;
+      }
+
       .program {
         padding: 20px 18px 30px;
+      }
+
+      .program h2 {
+        font-size: 23px;
+      }
+
+      .welcome {
+        font-size: 16px;
+        margin-bottom: 26px;
+      }
+
+      .buttons {
+        flex-direction: column;
+        gap: 14px;
       }
 
       .button {
         width: 100%;
         min-width: 0;
+        min-height: 70px;
+        padding: 20px;
+        font-size: 20px;
       }
     }
   </style>
@@ -173,9 +208,7 @@
       <h2>Conference Program</h2>
 
       <p class="welcome">
-        Welcome to MBI Symposium 2026.
-        Access the conference program and participant
-        information using the options below.
+        Choose the version best suited to your device.
       </p>
 
       <div class="buttons">
