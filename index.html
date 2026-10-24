@@ -1,107 +1,212 @@
 
-* {
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBI Symposium 2026</title>
 
-body {
-  margin: 0;
-  padding: 24px 12px;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f2f5f8;
-  color: #263746;
-}
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-.header {
-  background: #12344d;
-  color: white;
-  text-align: center;
-  padding: 35px 20px 20px;
-  border-radius: 16px 16px 0 0;
-}
+    body {
+      margin: 0;
+      padding: 24px 12px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f5f8;
+      color: #ffffff;
+    }
 
-.logo {
-  width: 260px;
-  max-width: 90%;
-  height: auto;
-  background: white;
-  padding: 8px;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
+    .conference-card {
+      max-width: 700px;
+      margin: 0 auto;
+      overflow: hidden;
+      background: #12344d;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+      text-align: center;
+    }
 
-h1 {
-  font-size: 32px;
-  margin: 10px 0;
-}
+    .header {
+      padding: 35px 20px 20px;
+      background: #12344d;
+    }
 
-.subtitle {
-  font-size: 18px;
-  margin: 8px 0;
-}
+    .logo {
+      display: block;
+      width: 280px;
+      max-width: 90%;
+      height: auto;
+      margin: 0 auto 22px;
+      background: #ffffff;
+      padding: 10px;
+      border-radius: 8px;
+    }
 
-.details {
-  margin-top: 20px;
-  line-height: 1.9;
-}
+    h1 {
+      font-size: 32px;
+      margin: 10px 0;
+      color: #ffffff;
+    }
 
-.container {
-  max-width: 650px;
-  margin: 0 auto;
-  padding: 25px 20px 35px;
-  text-align: center;
-  background: #12344d;
-  color: white;
-  border-radius: 0 0 16px 16px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-}
+    .subtitle {
+      font-size: 19px;
+      margin: 10px 0;
+      color: #e1eaf0;
+    }
 
-.container h2 {
-  margin-top: 0;
-  color: white;
-}
+    .details {
+      margin-top: 22px;
+      line-height: 2;
+      font-size: 16px;
+      color: #ffffff;
+    }
 
-.welcome {
-  line-height: 1.7;
-  color: #e1eaf0;
-  margin-bottom: 25px;
-}
+    .program {
+      padding: 20px 25px 40px;
+      background: #12344d;
+    }
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}
+    .program h2 {
+      font-size: 24px;
+      margin: 8px 0 15px;
+      color: #ffffff;
+    }
 
-.button {
-  display: inline-block;
-  min-width: 190px;
-  padding: 16px 20px;
-  background: white;
-  color: #12344d;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 17px;
-  font-weight: bold;
-}
+    .welcome {
+      max-width: 520px;
+      margin: 0 auto 28px;
+      line-height: 1.8;
+      color: #e1eaf0;
+      font-size: 16px;
+    }
 
-.button:hover {
-  background: #e1eaf0;
-}
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
 
-footer {
-  text-align: center;
-  padding: 15px;
-  color: #6b7785;
-  font-size: 13px;
-}
+    .button {
+      display: inline-block;
+      min-width: 200px;
+      padding: 16px 22px;
+      background: #ffffff;
+      color: #12344d;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 17px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
 
-@media (max-width: 480px) {
-  h1 {
-    font-size: 26px;
-  }
+    .button:hover {
+      background: #dce9f2;
+    }
 
-  .button {
-    width: 100%;
-  }
-}
+    footer {
+      text-align: center;
+      padding: 20px 10px;
+      color: #667788;
+      font-size: 13px;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 12px 8px;
+      }
+
+      .header {
+        padding: 25px 15px 15px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      .subtitle {
+        font-size: 17px;
+      }
+
+      .program {
+        padding: 20px 18px 30px;
+      }
+
+      .button {
+        width: 100%;
+        min-width: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="conference-card">
+
+    <header class="header">
+
+      <img
+        src="mbi-logo.jpg.jpg"
+        alt="MBI Symposium Logo"
+        class="logo"
+      >
+
+      <h1>MBI Symposium 2026</h1>
+
+      <div class="subtitle">
+        Mind-Body Interface Symposium
+      </div>
+
+      <div class="details">
+        <div>📅 November 14–16, 2026</div>
+        <div>📍 Taichung, Taiwan</div>
+      </div>
+
+    </header>
+
+    <section class="program">
+
+      <h2>Conference Program</h2>
+
+      <p class="welcome">
+        Welcome to MBI Symposium 2026.
+        Access the conference program and participant
+        information using the options below.
+      </p>
+
+      <div class="buttons">
+
+        <a
+          class="button"
+          href="conference.pdf"
+          target="_blank"
+          rel="noopener"
+        >
+          📱 Mobile
+        </a>
+
+        <a
+          class="button"
+          href="conference.pdf"
+          target="_blank"
+          rel="noopener"
+        >
+          💻 Laptop
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    MBI Symposium 2026 · Taichung, Taiwan
+  </footer>
+
+</body>
+</html>
